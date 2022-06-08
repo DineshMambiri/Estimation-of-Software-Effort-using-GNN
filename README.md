@@ -1,0 +1,2 @@
+# Estimation-of-Software-Effort-using-GNN
+Recently, Graph Neural Network (GNN) has gained increasing  popularity in various domains, including social network, knowledge  graph, recommender system, and even life science. The power of  GNN in modelling the dependencies between nodes in a graph enables  the breakthrough in the research area related to graph analysis. We are using GNN in the Software effort estimation.
