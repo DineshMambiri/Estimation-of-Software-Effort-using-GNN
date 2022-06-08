@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cocomo Model</title>
+</head>
+<body>
+<h1>Estimate your project with Cocomo Model</h1>
+<form action="estimate">
+    <label for="kloc">Source Lines of Code (in thousands)</label>
+    <input type="number" name="kloc" step="0.1" value="" placeholder=21.9 required>
+    <br>
+    <label for="mode">Mode</label>
+    <select name="mode" id="mode">
+      <option value='embedded'>Embedded</option>
+      <option value='organic'>Organic</option>
+      <option value='semidetached'>Semidetached</option>
+    </select>
+    <h2>Product attributes</h2>
+    <label for="rely">Required software reliability extent</label>
+    <select name="rely" id="rely">
+      <option value=0>Very low</option>
+      <option value=1>Low</option>
+      <option value=2>Normal</option>
+      <option value=3>High</option>
+      <option value=4>Very High</option>
+    </select>
+    <br>
+    <label for="data">Size of the application database</label>
+    <select name="data" id="data">
+      <option value=0>Low</option>
+      <option value=1>Normal</option>
+      <option value=2>High</option>
+      <option value=3>Very High</option>
+    </select>
+    <br>
+    <label for="cplx">The complexity of the product</label>
+    <select name="cplx" id="cplx">
+      <option value=0>Very low</option>
+      <option value=1>Low</option>
+      <option value=2>Normal</option>
+      <option value=3>High</option>
+      <option value=4>Very High</option>
+      <option value=5>Extra High</option>
+    </select>
+    <h2>Computer attributes</h2>
+    <label for="time">Run-time performance constraints</label>
+    <select name="time" id="time">
+      <option value=0>Normal</option>
+      <option value=1>High</option>
+      <option value=2>Very High</option>
+      <option value=3>Extra High</option>
+    </select>
+    <br>
+    <label for="stor">Memory constraints</label>
+    <select name="stor" id="stor">
+      <option value=0>Normal</option>
+      <option value=1>High</option>
+      <option value=2>Very High</option>
+      <option value=3>Extra High</option>
+    </select>
+    <br>
+    <label for="virt">The volatility of the virtual machine environment</label>
+    <select name="virt" id="virt">
+      <option value=0>Low</option>
+      <option value=1>Normal</option>
+      <option value=2>High</option>
+      <option value=3>Very High</option>
+    </select>
+    <br>
+    <label for="turn">Required turnabout time</label>
+    <select name="turn" id="turn">
+      <option value=0>Low</option>
+      <option value=1>Normal</option>
+      <option value=2>High</option>
+      <option value=3>Very High</option>
+    </select>
+    <h2>Personnel attributes</h2>
+    <label for="acap">Analyst capability</label>
+    <select name="acap" id="acap">
+      <option value=0>Very low</option>
+      <option value=1>Low</option>
+      <option value=2>Normal</option>
+      <option value=3>High</option>
+      <option value=4>Very High</option>
+    </select>
+    <br>
+    <label for="aexp">Applications experience</label>
+    <select name="aexp" id="aexp">
+      <option value=0>Very low</option>
+      <option value=1>Low</option>
+      <option value=2>Normal</option>
+      <option value=3>High</option>
+      <option value=4>Very High</option>
+    </select>
+    <br>
+    <label for="pcap">Software engineering capability</label>
+    <select name="pcap" id="pcap">
+      <option value=0>Very low</option>
+      <option value=1>Low</option>
+      <option value=2>Normal</option>
+      <option value=3>High</option>
+      <option value=4>Very High</option>
+    </select>
+    <br>
+    
+    <label for="vexp">Virtual machine experience</label>
+    <select name="vexp" id="vexp">
+      <option value=0>Very low</option>
+      <option value=1>Low</option>
+      <option value=2>Normal</option>
+      <option value=3>High</option>
+    </select>
+    <br>
+    <label for="lexp">Programming language experience</label>
+    <select name="lexp" id="lexp">
+      <option value=0>Very low</option>
+      <option value=1>Low</option>
+      <option value=2>Normal</option>
+      <option value=3>High</option>
+    </select>
+    <h2>Project attributes</h2>
+    <label for="modp">Application of software engineering methods</label>
+    <select name="modp" id="modp">
+      <option value=0>Very low</option>
+      <option value=1>Low</option>
+      <option value=2>Normal</option>
+      <option value=3>High</option>
+      <option value=4>Very High</option>
+    </select>
+    <br>
+    <label for="tool">Use of software tools</label>
+    <select name="tool" id="tool">
+      <option value=0>Very low</option>
+      <option value=1>Low</option>
+      <option value=2>Normal</option>
+      <option value=3>High</option>
+      <option value=4>Very High</option>
+    </select>
+    <br>
+    
+    <label for="sced">Required development schedule</label>
+    <select name="sced" id="sced">
+      <option value=0>Very low</option>
+      <option value=1>Low</option>
+      <option value=2>Normal</option>
+      <option value=3>High</option>
+      <option value=4>Very High</option>
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
